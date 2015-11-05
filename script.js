@@ -16,21 +16,15 @@ function getRandomColor() {
     return color;
 }
 
-function Color(arr) {
-	var count = 0;
+function color(arr) {
 	for (var i = 0; i < arr.length; i++) {
-		count++;
 		arr[i].style.float = "left";
 		arr[i].style.width = "11.1%";
 		arr[i].style.height = "11.1%"
 		arr[i].style.paddingBottom = "11.1%"
-		if (count % 2 === 0) {
-			arr[i].style.backgroundColor = getRandomColor();			
-		} else {
-			arr[i].style.backgroundColor = getRandomColor();
-		}
+		arr[i].style.backgroundColor = getRandomColor();
 	}
 }
-Color(arr);
+color(arr);
 
 
