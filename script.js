@@ -25,6 +25,16 @@ function color(arr) {
 		arr[i].style.backgroundColor = getRandomColor();
 	}
 }
+
+function flashColors(){
+    setInterval(function (){
+        for(var i =0; i < arr.length; i++){
+        	color(arr);
+        }
+        }, 2000);
+}
+
 color(arr);
+flashColors();
 
 
